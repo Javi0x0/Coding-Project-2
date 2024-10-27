@@ -1,0 +1,10 @@
+^C:\USERS\MININ\DOWNLOADS\CSC 656-01\CODING PROJECT 2\SUM_HARNESS_INSTRUCTIONAL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional" "-BC:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build" --check-stamp-file "C:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
