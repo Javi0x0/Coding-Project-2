@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\minin\Downloads\CSC 656-01\Coding project 2\sum_harness_instructional\sum_indirect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\minin\Downloads\CSC 656-01\Coding project 2\sum_harness_instructional\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\minin\Downloads\CSC 656-01\Coding project 2\sum_harness_instructional\build\benchmark.dir\$(Configuration)\benchmark.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{4EA390D0-AC31-3825-B27E-AF80FAFB775D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{01E63DAA-B56B-3E52-831D-C677FB41B782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
