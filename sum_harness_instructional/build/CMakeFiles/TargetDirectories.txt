@@ -1,6 +1,0 @@
-C:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build/CMakeFiles/benchmark.dir
-C:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build/CMakeFiles/sum_direct.dir
-C:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build/CMakeFiles/sum_vector.dir
-C:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build/CMakeFiles/sum_indirect.dir
-C:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/minin/Downloads/CSC 656-01/Coding project 2/sum_harness_instructional/build/CMakeFiles/ZERO_CHECK.dir
