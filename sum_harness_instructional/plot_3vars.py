@@ -48,7 +48,7 @@ code1_mflops = calculate_mflops(problem_sizes, code1_time)
 code2_mflops = calculate_mflops(problem_sizes, code2_time)
 code3_mflops = calculate_mflops(problem_sizes, code3_time)
 
-
+plt.figure()
 plt.title("Comparison of 3 Codes - MFLOP/s")
 
 xlocs = [i for i in range(len(problem_sizes))]
