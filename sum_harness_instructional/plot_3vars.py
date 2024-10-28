@@ -67,8 +67,8 @@ plt.plot(code1_mflops, "r-o", label="Sum Direct MFLOP/s")
 plt.plot(code2_mflops, "b-x", label="Sum Indirect MFLOP/s")
 plt.plot(code3_mflops, "g-^", label="Sum Vector MFLOP/s")
 
-plt.xscale("log")  # Optional: Log scale for better visualization
-plt.yscale("log")  # Optional: Log scale for better visualization
+#plt.xscale("log")  # Optional: Log scale for better visualization
+#plt.yscale("log")  # Optional: Log scale for better visualization
 
 plt.xlabel("Problem Sizes")
 plt.ylabel("MFLOP/s")

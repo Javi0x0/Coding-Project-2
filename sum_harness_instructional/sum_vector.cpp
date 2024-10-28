@@ -10,7 +10,7 @@
 
 void 
 setup(int64_t N, uint64_t A[])
-{
+{ 
    for (int64_t i = 0; i < N; ++i) {
        A[i] = i;
    }
@@ -22,8 +22,11 @@ sum(int64_t N, uint64_t A[])
 {
    int64_t total = 0;
    for (int64_t i = 0; i < N; ++i) {
-       total += A[i];
+       total += A[i] + A[i + 1] + A[i + 2] + A[i + 3];
    }
+   for (int64_t i=0; i < N; ++i) {
+        total += A[i];
+    }
    printf(" inside sum_vector perform_sum, N=%ld \n", N);
 
    return total;
