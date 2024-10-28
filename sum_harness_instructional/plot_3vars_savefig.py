@@ -103,7 +103,7 @@ plt.plot(code2_bandwidth, "b-x", label="Indirect Sum Bandwidth")
 plt.plot(code3_bandwidth, "g-^", label="Vector Sum Bandwidth")
 
 plt.xlabel("Problem Sizes")
-plt.ylabel("% of Bandwidth used")
+plt.ylabel("% peak memory bandwidth utilized")
 plt.legend(loc="best")
 plt.grid(axis='both')
 plt.savefig(plot_bandwidth_fname, dpi=300)
