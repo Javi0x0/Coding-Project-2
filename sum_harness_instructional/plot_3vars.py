@@ -36,7 +36,20 @@ code1_time = df[var_names[1]].values.tolist()
 code2_time = df[var_names[2]].values.tolist()
 code3_time = df[var_names[3]].values.tolist()
 
-plt.title("Comparison of 3 Codes")
+def calculate_mflops(problem_sizes, elapsed_times):
+    mflops = []
+    for size, time in zip(problem_sizes, elapsed_times):
+        # MFLOP/s = (N - 1) / (Elapsed Time in seconds * 10^6)
+        mflops_value = (size - 1) / (time * 10**6)  # Using size - 1 for better accuracy
+        mflops.append(mflops_value)
+    return mflops
+
+code1_mflops = calculate_mflops(problem_sizes, code1_time)
+code2_mflops = calculate_mflops(problem_sizes, code2_time)
+code3_mflops = calculate_mflops(problem_sizes, code3_time)
+
+
+plt.title("Comparison of 3 Codes - MFLOP/s")
 
 xlocs = [i for i in range(len(problem_sizes))]
 
@@ -49,21 +62,20 @@ plt.xticks(xlocs, problem_sizes)
 # time and problem size? You may need to add some code here to compute
 # MFLOPS, then modify the plt.plot() lines below to plot MFLOPS rather than time.
 
-plt.plot(code1_time, "r-o")
-plt.plot(code2_time, "b-x")
-plt.plot(code3_time, "g-^")
+# Plotting MFLOP/s values instead of raw elapsed times
+plt.plot(code1_mflops, "r-o", label="Sum Direct MFLOP/s")
+plt.plot(code2_mflops, "b-x", label="Sum Indirect MFLOP/s")
+plt.plot(code3_mflops, "g-^", label="Sum Vector MFLOP/s")
 
-#plt.xscale("log")
-#plt.yscale("log")
+plt.xscale("log")  # Optional: Log scale for better visualization
+plt.yscale("log")  # Optional: Log scale for better visualization
 
 plt.xlabel("Problem Sizes")
-plt.ylabel("runtime")
-
-varNames = [var_names[1], var_names[2], var_names[3]]
-plt.legend(varNames, loc="best")
-
+plt.ylabel("MFLOP/s")
+plt.legend(loc="best")
 plt.grid(axis='both')
 
+# Display the plot
 plt.show()
 
 # EOF
