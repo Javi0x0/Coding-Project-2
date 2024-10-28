@@ -1,7 +1,7 @@
 Working on problem size N=8388608 
  inside direct_sum problem_setup, N=8388608 
  inside direct_sum perform_sum, N=8388608 
- Elapsed time is : 0.0029 
+ Elapsed time is : 0.0036 
  Sum result = 35184376283136 
 Working on problem size N=16777216 
  inside direct_sum problem_setup, N=16777216 
@@ -11,20 +11,20 @@ Working on problem size N=16777216
 Working on problem size N=33554432 
  inside direct_sum problem_setup, N=33554432 
  inside direct_sum perform_sum, N=33554432 
- Elapsed time is : 0.0125 
+ Elapsed time is : 0.0119 
  Sum result = 562949970198528 
 Working on problem size N=67108864 
  inside direct_sum problem_setup, N=67108864 
  inside direct_sum perform_sum, N=67108864 
- Elapsed time is : 0.0236 
+ Elapsed time is : 0.0235 
  Sum result = 2251799847239680 
 Working on problem size N=134217728 
  inside direct_sum problem_setup, N=134217728 
  inside direct_sum perform_sum, N=134217728 
- Elapsed time is : 0.0437 
+ Elapsed time is : 0.0439 
  Sum result = 9007199321849856 
 Working on problem size N=268435456 
  inside direct_sum problem_setup, N=268435456 
  inside direct_sum perform_sum, N=268435456 
- Elapsed time is : 0.0858 
+ Elapsed time is : 0.0854 
  Sum result = 36028797153181696 
